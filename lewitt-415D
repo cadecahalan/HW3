@@ -1,0 +1,22 @@
+background(360);
+noStroke();
+
+//alternating colors
+fill(random(360), random(100), random(100)); 
+rect (width/5, height/2.5, 150, 150);
+
+fill(random(360), random(100), random(100)); 
+beginShape();
+vertex((width/5) + 150, (height/2.5));
+vertex((width/5) + 220, (height/2.5)-70);
+vertex((width/5) + 220, (height/2.5)+70);
+vertex((width/5) + 150, (height/2.5)+150);
+endShape(CLOSE);
+
+fill(random(360), random(100), random(100)); 
+beginShape();
+vertex((width/5), (height/2.5));
+vertex((width/5) + 70, (height/2.5)-70);
+vertex((width/5) + 220, (height/2.5)-70);
+vertex((width/5) + 150, (height/2.5));
+endShape(CLOSE);
