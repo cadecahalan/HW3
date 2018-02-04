@@ -1,9 +1,7 @@
-function setup() { 
-  createCanvas(600, 325);
-	noStroke();
-} 
+createCanvas(600, 325);
+noStroke();
 
-function draw() { 
+if(true) { 
   fill(220);
 	rect (0, 0, width/2, height/2);
   fill(175);
