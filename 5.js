@@ -22,7 +22,6 @@ function draw() {
 }
 	
 function keyPressed() {
-  print(key);
   if (key == 'R') { //red
     fill(225, 146, 146);
   } else if (key == 'G') { //green
