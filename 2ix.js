@@ -1,14 +1,17 @@
+var rate = 0.1;
+var x = 0;
+var y = 0;
+
 function setup() { 
   createCanvas(400, 400);
 } 
 
 function draw(){
-	
-	background(250);
-	
-	fill(164, 200, 10);
+  background(250);
+  fill(164, 200, 10);
 	noStroke();
-  ellipse (mouseX, mouseY, 30, 30);
+  ellipse (x, y, 30, 30);
+	x = mouseX*rate + x*(1-rate);
+	y = mouseY*rate + y*(1-rate);
 }
 
-//can't get the exponential moving average to work
